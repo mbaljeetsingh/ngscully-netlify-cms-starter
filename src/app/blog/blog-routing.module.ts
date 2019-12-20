@@ -1,13 +1,18 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
-import {BlogComponent} from './blog.component';
+import { BlogComponent } from './blog.component';
+import { BlogListComponent } from './blog-list/blog-list.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: BlogListComponent,
+  },
+  {
     path: ':slug',
     component: BlogComponent,
-  }
+  },
 ];
 
 @NgModule({
@@ -15,4 +20,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class BlogRoutingModule {}
-

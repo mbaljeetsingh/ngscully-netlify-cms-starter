@@ -1,0 +1,21 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+header {
+  height: 10vh;
+  mat-toolbar {
+    position: fixed;
+  }
+}
+main {
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+  }
+}
