@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "ngscully-netlify-cms-starter": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngscully-netlify-cms-starter"
+    }
+  },
+  "defaultProject": "ngscully-netlify-cms-starter",
+  "cli": {
+    "analytics": "92b2812d-8ca8-4ed0-b6ac-4cf308842920"
+  }
 }
