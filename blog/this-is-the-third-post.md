@@ -1,6 +1,6 @@
 ---
 title: This is the third post
-description: blog description
+description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos cumque harum praesentium sapiente voluptas
 publish: false
 ---
 
