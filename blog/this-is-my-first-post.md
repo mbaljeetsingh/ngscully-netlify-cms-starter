@@ -1,9 +1,9 @@
 ---
-title: this is my first post (update)
-description: blog description (update)
+title: this is my first post 
+description: blog description 
 publish: true
 ---
-# this is my first post (update)
+# this is my first post 
 
 ```
 function sum (a, b){   return a+b;}
