@@ -1,13 +1,23 @@
 <!-- <h1>Overview of blog posts</h1> -->
 
 <div class="blog">
-  <a
+  <mat-card
     class="article"
     *ngFor="let blog of blogs$ | async"
     [routerLink]="[blog.route]"
   >
-    <h3>{{ blog.title || blog.route }}</h3>
-    <!-- <h4>{{ blog.published | date: 'shortDate' }}</h4> -->
-    <p>{{ blog.description }}</p>
-  </a>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ blog.title || blog.route }}</mat-card-title>
+      <!-- <mat-card-subtitle>{{ blog.published | date: 'shortDate' }}</mat-card-subtitle> -->
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{ blog.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Read More</button>
+    </mat-card-actions>
+  </mat-card>
 </div>

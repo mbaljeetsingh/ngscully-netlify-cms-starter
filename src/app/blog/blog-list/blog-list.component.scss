@@ -1,8 +1,9 @@
 .blog {
+  margin-top: 1rem;
   display: grid;
   /* make grid responsive */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 3rem;
   grid-row-gap: 20px;
 }
 .blog .article {
