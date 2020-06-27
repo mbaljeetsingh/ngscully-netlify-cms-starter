@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 
 @Component({
@@ -9,9 +9,12 @@ import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 })
 export class BlogListComponent implements OnInit {
   blogs$ = this.srs.available$.pipe(
-    map(routeList =>
+    map((routeList) =>
       routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))
-    )
+    ),
+    tap((data) => {
+      console.log(data);
+    })
   );
 
   constructor(private srs: ScullyRoutesService) {}
