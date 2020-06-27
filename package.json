@@ -23,7 +23,7 @@
     "@angular/platform-browser": "~9.0.0-rc.7",
     "@angular/platform-browser-dynamic": "~9.0.0-rc.7",
     "@angular/router": "~9.0.0-rc.7",
-    "@scullyio/init": "0.0.8",
+    "@scullyio/init": "latest",
     "@scullyio/ng-lib": "latest",
     "@scullyio/scully": "latest",
     "hammerjs": "^2.0.8",
