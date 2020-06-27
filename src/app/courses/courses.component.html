@@ -1,0 +1,5 @@
+<ul *ngIf="udemyCourses | async as courses">
+  <li size="12" *ngFor="let course of courses['results']">
+    {{ course.headline }}
+  </li>
+</ul>
